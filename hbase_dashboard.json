@@ -137,7 +137,7 @@
           "target": "select total_read_requests_rate_across_regionservers, total_write_requests_rate_across_regionservers where entityName=hbase"
         }
       ],
-      "title": "Panel Title",
+      "title": "Read and Write Requests",
       "type": "timeseries"
     },
     {
@@ -221,12 +221,11 @@
           "datasource": {
             "type": "foursquare-clouderamanager-datasource"
           },
-          "key": "Q-91d40680-61c4-417b-b3a0-032d97b85ba4-0",
           "refId": "A",
           "target": "select total_regions_across_regionservers where entityName=hbase"
         }
       ],
-      "title": "New Panel",
+      "title": "Total Regions Across RegionServers",
       "type": "timeseries"
     }
   ],
