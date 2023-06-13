@@ -929,7 +929,7 @@
               }
             ]
           },
-          "unit": "short"
+          "unit": "decbytes"
         },
         "overrides": []
       },
@@ -1222,6 +1222,6 @@
   "timezone": "",
   "title": "Hbase",
   "uid": "cb1dd603-c225-4bde-b5e9-c2692fa0112b",
-  "version": 3,
+  "version": 5,
   "weekStart": ""
 }
