@@ -90,6 +90,65 @@
       "fieldConfig": {
         "defaults": {
           "color": {
+            "fixedColor": "green",
+            "mode": "fixed"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 3,
+        "x": 0,
+        "y": 1
+      },
+      "id": 1,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.5.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "foursquare-clouderamanager-datasource",
+            "uid": "${DS_CLOUDERAMANAGER}"
+          },
+          "refId": "A",
+          "target": "select total_regions_across_regionservers where entityName=hbase"
+        }
+      ],
+      "title": "Total Regions",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "foursquare-clouderamanager-datasource",
+        "uid": "${DS_CLOUDERAMANAGER}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
             "mode": "continuous-GrYlRd"
           },
           "mappings": [],
@@ -105,65 +164,6 @@
                 "value": 80
               }
             ]
-          }
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 4,
-        "w": 3,
-        "x": 0,
-        "y": 1
-      },
-      "id": 1,
-      "options": {
-        "displayMode": "lcd",
-        "minVizHeight": 10,
-        "minVizWidth": 0,
-        "orientation": "horizontal",
-        "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
-          "fields": "",
-          "values": false
-        },
-        "showUnfilled": true,
-        "valueMode": "color"
-      },
-      "pluginVersion": "9.5.3",
-      "targets": [
-        {
-          "datasource": {
-            "type": "foursquare-clouderamanager-datasource",
-            "uid": "${DS_CLOUDERAMANAGER}"
-          },
-          "refId": "A",
-          "target": "select total_regions_across_regionservers where entityName=hbase"
-        }
-      ],
-      "title": "Total Regions",
-      "type": "bargauge"
-    },
-    {
-      "datasource": {
-        "type": "foursquare-clouderamanager-datasource",
-        "uid": "${DS_CLOUDERAMANAGER}"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "thresholds"
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              }
-            ]
           },
           "unit": "decbytes"
         },
@@ -177,16 +177,19 @@
       },
       "id": 5,
       "options": {
-        "orientation": "auto",
+        "displayMode": "lcd",
+        "minVizHeight": 10,
+        "minVizWidth": 0,
+        "orientation": "horizontal",
         "reduceOptions": {
           "calcs": [
             "lastNotNull"
           ],
-          "fields": "",
+          "fields": "/^total_mem_rss_across_regionservers \\(hbase\\)$/",
           "values": false
         },
-        "showThresholdLabels": false,
-        "showThresholdMarkers": true
+        "showUnfilled": true,
+        "valueMode": "color"
       },
       "pluginVersion": "9.5.3",
       "targets": [
@@ -200,7 +203,7 @@
         }
       ],
       "title": "Total Resident Memory",
-      "type": "gauge"
+      "type": "bargauge"
     },
     {
       "datasource": {
@@ -1209,23 +1212,7 @@
   "style": "dark",
   "tags": [],
   "templating": {
-    "list": [
-      {
-        "current": {},
-        "definition": "",
-        "hide": 0,
-        "includeAll": false,
-        "multi": false,
-        "name": "SERVICENAME",
-        "options": [],
-        "query": "",
-        "refresh": 1,
-        "regex": "",
-        "skipUrlSync": false,
-        "sort": 0,
-        "type": "query"
-      }
-    ]
+    "list": []
   },
   "time": {
     "from": "now-1h",
@@ -1235,6 +1222,6 @@
   "timezone": "",
   "title": "Hbase",
   "uid": "cb1dd603-c225-4bde-b5e9-c2692fa0112b",
-  "version": 2,
+  "version": 3,
   "weekStart": ""
 }
