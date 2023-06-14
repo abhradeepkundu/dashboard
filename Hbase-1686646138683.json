@@ -84,8 +84,7 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource",
-        "uid": "${DS_CLOUDERAMANAGER}"
+        "type": "foursquare-clouderamanager-datasource"
       },
       "fieldConfig": {
         "defaults": {
@@ -131,8 +130,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource",
-            "uid": "${DS_CLOUDERAMANAGER}"
+            "type": "foursquare-clouderamanager-datasource"
           },
           "refId": "A",
           "target": "select total_regions_across_regionservers where entityName=hbase"
@@ -143,8 +141,7 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource",
-        "uid": "${DS_CLOUDERAMANAGER}"
+        "type": "foursquare-clouderamanager-datasource"
       },
       "fieldConfig": {
         "defaults": {
@@ -195,8 +192,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource",
-            "uid": "${DS_CLOUDERAMANAGER}"
+            "type": "foursquare-clouderamanager-datasource"
           },
           "refId": "A",
           "target": "select total_mem_rss_across_regionservers where entityName=hbase"
@@ -207,8 +203,7 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource",
-        "uid": "${DS_CLOUDERAMANAGER}"
+        "type": "foursquare-clouderamanager-datasource"
       },
       "fieldConfig": {
         "defaults": {
@@ -252,8 +247,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource",
-            "uid": "${DS_CLOUDERAMANAGER}"
+            "type": "foursquare-clouderamanager-datasource"
           },
           "refId": "A",
           "target": "select mem_swap_across_regionservers where entityName=hbase"
@@ -264,8 +258,7 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource",
-        "uid": "${DS_CLOUDERAMANAGER}"
+        "type": "foursquare-clouderamanager-datasource"
       },
       "fieldConfig": {
         "defaults": {
@@ -316,8 +309,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource",
-            "uid": "${DS_CLOUDERAMANAGER}"
+            "type": "foursquare-clouderamanager-datasource"
           },
           "refId": "A",
           "target": "select oom_exits_rate_across_regionservers where entityName=hbase"
@@ -328,8 +320,7 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource",
-        "uid": "${DS_CLOUDERAMANAGER}"
+        "type": "foursquare-clouderamanager-datasource"
       },
       "fieldConfig": {
         "defaults": {
@@ -383,8 +374,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource",
-            "uid": "${DS_CLOUDERAMANAGER}"
+            "type": "foursquare-clouderamanager-datasource"
           },
           "refId": "A",
           "target": "select total_unexpected_exits_rate_across_regionservers where entityName=hbase"
@@ -395,8 +385,7 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource",
-        "uid": "${DS_CLOUDERAMANAGER}"
+        "type": "foursquare-clouderamanager-datasource"
       },
       "fieldConfig": {
         "defaults": {
@@ -443,8 +432,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource",
-            "uid": "${DS_CLOUDERAMANAGER}"
+            "type": "foursquare-clouderamanager-datasource"
           },
           "refId": "A",
           "target": "select total_block_cache_blocks_cached_across_regionservers where entityName=hbase"
@@ -455,8 +443,7 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource",
-        "uid": "${DS_CLOUDERAMANAGER}"
+        "type": "foursquare-clouderamanager-datasource"
       },
       "fieldConfig": {
         "defaults": {
@@ -533,8 +520,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource",
-            "uid": "${DS_CLOUDERAMANAGER}"
+            "type": "foursquare-clouderamanager-datasource"
           },
           "refId": "A",
           "target": "select integral(gc_count_par_new_rate_across_regionservers) where entityName=hbase"
@@ -545,8 +531,7 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource",
-        "uid": "${DS_CLOUDERAMANAGER}"
+        "type": "foursquare-clouderamanager-datasource"
       },
       "fieldConfig": {
         "defaults": {
@@ -622,8 +607,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource",
-            "uid": "${DS_CLOUDERAMANAGER}"
+            "type": "foursquare-clouderamanager-datasource"
           },
           "refId": "A",
           "target": "select integral(gc_time_ms_par_new_rate_across_regionservers) where entityName=hbase"
@@ -634,8 +618,7 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource",
-        "uid": "${DS_CLOUDERAMANAGER}"
+        "type": "foursquare-clouderamanager-datasource"
       },
       "fieldConfig": {
         "defaults": {
@@ -711,8 +694,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource",
-            "uid": "${DS_CLOUDERAMANAGER}"
+            "type": "foursquare-clouderamanager-datasource"
           },
           "refId": "A",
           "target": "select web_metrics_collection_duration_across_regionservers where entityName=hbase"
@@ -736,8 +718,7 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource",
-        "uid": "${DS_CLOUDERAMANAGER}"
+        "type": "foursquare-clouderamanager-datasource"
       },
       "fieldConfig": {
         "defaults": {
@@ -786,8 +767,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource",
-            "uid": "${DS_CLOUDERAMANAGER}"
+            "type": "foursquare-clouderamanager-datasource"
           },
           "refId": "A",
           "target": "select block_cache_hit_rate_across_regionservers where entityName=hbase"
@@ -798,8 +778,7 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource",
-        "uid": "${DS_CLOUDERAMANAGER}"
+        "type": "foursquare-clouderamanager-datasource"
       },
       "fieldConfig": {
         "defaults": {
@@ -846,8 +825,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource",
-            "uid": "${DS_CLOUDERAMANAGER}"
+            "type": "foursquare-clouderamanager-datasource"
           },
           "refId": "A",
           "target": "select block_cache_miss_rate_across_regionservers where entityName=hbase"
@@ -858,8 +836,7 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource",
-        "uid": "${DS_CLOUDERAMANAGER}"
+        "type": "foursquare-clouderamanager-datasource"
       },
       "fieldConfig": {
         "defaults": {
@@ -902,8 +879,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource",
-            "uid": "${DS_CLOUDERAMANAGER}"
+            "type": "foursquare-clouderamanager-datasource"
           },
           "refId": "A",
           "target": "select total_block_cache_free_size_across_regionservers where entityName=hbase"
@@ -914,8 +890,7 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource",
-        "uid": "${DS_CLOUDERAMANAGER}"
+        "type": "foursquare-clouderamanager-datasource"
       },
       "fieldConfig": {
         "defaults": {
@@ -958,8 +933,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource",
-            "uid": "${DS_CLOUDERAMANAGER}"
+            "type": "foursquare-clouderamanager-datasource"
           },
           "refId": "A",
           "target": "select total_block_cache_size_across_regionservers where entityName=hbase"
@@ -970,8 +944,7 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource",
-        "uid": "${DS_CLOUDERAMANAGER}"
+        "type": "foursquare-clouderamanager-datasource"
       },
       "fieldConfig": {
         "defaults": {
@@ -1018,8 +991,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource",
-            "uid": "${DS_CLOUDERAMANAGER}"
+            "type": "foursquare-clouderamanager-datasource"
           },
           "refId": "A",
           "target": "select block_cache_evicted_rate_across_regionservers where entityName=hbase"
@@ -1030,8 +1002,7 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource",
-        "uid": "${DS_CLOUDERAMANAGER}"
+        "type": "foursquare-clouderamanager-datasource"
       },
       "fieldConfig": {
         "defaults": {
@@ -1110,8 +1081,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource",
-            "uid": "${DS_CLOUDERAMANAGER}"
+            "type": "foursquare-clouderamanager-datasource"
           },
           "refId": "A",
           "target": "select block_cache_hit_ratio_across_regionservers where entityName=hbase"
@@ -1122,8 +1092,7 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource",
-        "uid": "${DS_CLOUDERAMANAGER}"
+        "type": "foursquare-clouderamanager-datasource"
       },
       "fieldConfig": {
         "defaults": {
@@ -1196,8 +1165,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource",
-            "uid": "${DS_CLOUDERAMANAGER}"
+            "type": "foursquare-clouderamanager-datasource"
           },
           "refId": "A",
           "target": "select total_block_cache_size_across_regionservers where entityName=hbase"
@@ -1221,7 +1189,6 @@
   "timepicker": {},
   "timezone": "",
   "title": "Hbase",
-  "uid": "cb1dd603-c225-4bde-b5e9-c2692fa0112b",
   "version": 5,
   "weekStart": ""
 }
