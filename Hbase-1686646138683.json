@@ -1,53 +1,4 @@
 {
-  "__inputs": [
-    {
-      "name": "DS_CLOUDERAMANAGER",
-      "label": "ClouderaManager",
-      "description": "",
-      "type": "datasource",
-      "pluginId": "foursquare-clouderamanager-datasource",
-      "pluginName": "Cloudera Manager"
-    }
-  ],
-  "__elements": {},
-  "__requires": [
-    {
-      "type": "panel",
-      "id": "bargauge",
-      "name": "Bar gauge",
-      "version": ""
-    },
-    {
-      "type": "datasource",
-      "id": "foursquare-clouderamanager-datasource",
-      "name": "Cloudera Manager",
-      "version": "0.9.3"
-    },
-    {
-      "type": "panel",
-      "id": "gauge",
-      "name": "Gauge",
-      "version": ""
-    },
-    {
-      "type": "grafana",
-      "id": "grafana",
-      "name": "Grafana",
-      "version": "9.5.3"
-    },
-    {
-      "type": "panel",
-      "id": "stat",
-      "name": "Stat",
-      "version": ""
-    },
-    {
-      "type": "panel",
-      "id": "timeseries",
-      "name": "Time series",
-      "version": ""
-    }
-  ],
   "annotations": {
     "list": [
       {
@@ -67,7 +18,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": null,
+  "id": 2,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -84,7 +35,8 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource"
+        "type": "foursquare-clouderamanager-datasource",
+        "uid": "PCBD112296461D5A7"
       },
       "fieldConfig": {
         "defaults": {
@@ -130,7 +82,8 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource"
+            "type": "foursquare-clouderamanager-datasource",
+            "uid": "PCBD112296461D5A7"
           },
           "refId": "A",
           "target": "select total_regions_across_regionservers where entityName=hbase"
@@ -141,7 +94,8 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource"
+        "type": "foursquare-clouderamanager-datasource",
+        "uid": "PCBD112296461D5A7"
       },
       "fieldConfig": {
         "defaults": {
@@ -192,7 +146,8 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource"
+            "type": "foursquare-clouderamanager-datasource",
+            "uid": "PCBD112296461D5A7"
           },
           "refId": "A",
           "target": "select total_mem_rss_across_regionservers where entityName=hbase"
@@ -203,7 +158,8 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource"
+        "type": "foursquare-clouderamanager-datasource",
+        "uid": "PCBD112296461D5A7"
       },
       "fieldConfig": {
         "defaults": {
@@ -247,7 +203,8 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource"
+            "type": "foursquare-clouderamanager-datasource",
+            "uid": "PCBD112296461D5A7"
           },
           "refId": "A",
           "target": "select mem_swap_across_regionservers where entityName=hbase"
@@ -258,7 +215,8 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource"
+        "type": "foursquare-clouderamanager-datasource",
+        "uid": "PCBD112296461D5A7"
       },
       "fieldConfig": {
         "defaults": {
@@ -309,7 +267,8 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource"
+            "type": "foursquare-clouderamanager-datasource",
+            "uid": "PCBD112296461D5A7"
           },
           "refId": "A",
           "target": "select oom_exits_rate_across_regionservers where entityName=hbase"
@@ -320,7 +279,8 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource"
+        "type": "foursquare-clouderamanager-datasource",
+        "uid": "PCBD112296461D5A7"
       },
       "fieldConfig": {
         "defaults": {
@@ -374,7 +334,8 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource"
+            "type": "foursquare-clouderamanager-datasource",
+            "uid": "PCBD112296461D5A7"
           },
           "refId": "A",
           "target": "select total_unexpected_exits_rate_across_regionservers where entityName=hbase"
@@ -385,7 +346,8 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource"
+        "type": "foursquare-clouderamanager-datasource",
+        "uid": "PCBD112296461D5A7"
       },
       "fieldConfig": {
         "defaults": {
@@ -432,7 +394,8 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource"
+            "type": "foursquare-clouderamanager-datasource",
+            "uid": "PCBD112296461D5A7"
           },
           "refId": "A",
           "target": "select total_block_cache_blocks_cached_across_regionservers where entityName=hbase"
@@ -443,7 +406,8 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource"
+        "type": "foursquare-clouderamanager-datasource",
+        "uid": "PCBD112296461D5A7"
       },
       "fieldConfig": {
         "defaults": {
@@ -520,7 +484,8 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource"
+            "type": "foursquare-clouderamanager-datasource",
+            "uid": "PCBD112296461D5A7"
           },
           "refId": "A",
           "target": "select integral(gc_count_par_new_rate_across_regionservers) where entityName=hbase"
@@ -531,7 +496,8 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource"
+        "type": "foursquare-clouderamanager-datasource",
+        "uid": "PCBD112296461D5A7"
       },
       "fieldConfig": {
         "defaults": {
@@ -607,7 +573,8 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource"
+            "type": "foursquare-clouderamanager-datasource",
+            "uid": "PCBD112296461D5A7"
           },
           "refId": "A",
           "target": "select integral(gc_time_ms_par_new_rate_across_regionservers) where entityName=hbase"
@@ -618,7 +585,8 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource"
+        "type": "foursquare-clouderamanager-datasource",
+        "uid": "PCBD112296461D5A7"
       },
       "fieldConfig": {
         "defaults": {
@@ -694,7 +662,8 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource"
+            "type": "foursquare-clouderamanager-datasource",
+            "uid": "PCBD112296461D5A7"
           },
           "refId": "A",
           "target": "select web_metrics_collection_duration_across_regionservers where entityName=hbase"
@@ -711,6 +680,735 @@
         "x": 0,
         "y": 12
       },
+      "id": 19,
+      "panels": [],
+      "title": "RegionServer:Maintenance",
+      "type": "row"
+    },
+    {
+      "datasource": {
+        "type": "foursquare-clouderamanager-datasource",
+        "uid": "PCBD112296461D5A7"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "decbytes"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 4,
+        "x": 0,
+        "y": 13
+      },
+      "id": 20,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.5.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "foursquare-clouderamanager-datasource",
+            "uid": "PCBD112296461D5A7"
+          },
+          "refId": "A",
+          "target": "select compaction_queue_size_across_regionservers where entityName=hbase"
+        }
+      ],
+      "title": "Compaction Queue Size",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "foursquare-clouderamanager-datasource",
+        "uid": "PCBD112296461D5A7"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "decbytes"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 4,
+        "x": 4,
+        "y": 13
+      },
+      "id": 21,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.5.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "foursquare-clouderamanager-datasource",
+            "uid": "PCBD112296461D5A7"
+          },
+          "refId": "A",
+          "target": "select flush_queue_size_across_regionservers where entityName=hbase"
+        }
+      ],
+      "title": "Flush Queue Size",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "foursquare-clouderamanager-datasource",
+        "uid": "PCBD112296461D5A7"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 4,
+        "x": 8,
+        "y": 13
+      },
+      "id": 22,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.5.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "foursquare-clouderamanager-datasource",
+            "uid": "PCBD112296461D5A7"
+          },
+          "refId": "A",
+          "target": "select regions_in_transition"
+        }
+      ],
+      "title": "Region In Transition",
+      "transformations": [
+        {
+          "id": "merge",
+          "options": {}
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "foursquare-clouderamanager-datasource",
+        "uid": "PCBD112296461D5A7"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "continuous-GrYlRd"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 4,
+        "x": 12,
+        "y": 13
+      },
+      "id": 28,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.5.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "foursquare-clouderamanager-datasource",
+            "uid": "PCBD112296461D5A7"
+          },
+          "refId": "A",
+          "target": "select total_storefiles_across_regionservers where entityName=hbase"
+        }
+      ],
+      "title": "Total Store Files",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "foursquare-clouderamanager-datasource",
+        "uid": "PCBD112296461D5A7"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "continuous-GrYlRd"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "decbytes"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 4,
+        "x": 16,
+        "y": 13
+      },
+      "id": 29,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.5.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "foursquare-clouderamanager-datasource",
+            "uid": "PCBD112296461D5A7"
+          },
+          "refId": "A",
+          "target": "select total_storefiles_size_across_regionservers where entityName=hbase"
+        }
+      ],
+      "title": "Total Store File Size",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "foursquare-clouderamanager-datasource",
+        "uid": "PCBD112296461D5A7"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "continuous-BlYlRd"
+          },
+          "custom": {
+            "fillOpacity": 70,
+            "lineWidth": 0,
+            "spanNulls": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "decbytes"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 4,
+        "x": 20,
+        "y": 13
+      },
+      "id": 23,
+      "options": {
+        "alignValue": "left",
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "mergeValues": true,
+        "rowHeight": 0.9,
+        "showValue": "auto",
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "foursquare-clouderamanager-datasource",
+            "uid": "PCBD112296461D5A7"
+          },
+          "refId": "A",
+          "target": "select total_memstore_size_across_regionservers where entityName=hbase"
+        }
+      ],
+      "title": "Total Memstore Size",
+      "type": "state-timeline"
+    },
+    {
+      "datasource": {
+        "type": "foursquare-clouderamanager-datasource",
+        "uid": "PCBD112296461D5A7"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "bars",
+            "fillOpacity": 100,
+            "gradientMode": "hue",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "decbytes"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 17
+      },
+      "id": 26,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "foursquare-clouderamanager-datasource",
+            "uid": "PCBD112296461D5A7"
+          },
+          "refId": "A",
+          "target": "select total_static_index_size_across_regionservers where entityName=hbase"
+        }
+      ],
+      "title": "Total Static Index Size",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "foursquare-clouderamanager-datasource",
+        "uid": "PCBD112296461D5A7"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "continuous-GrYlRd"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "bars",
+            "fillOpacity": 90,
+            "gradientMode": "scheme",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "decbytes"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 17
+      },
+      "id": 27,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "foursquare-clouderamanager-datasource",
+            "uid": "PCBD112296461D5A7"
+          },
+          "refId": "A",
+          "target": "select total_storefile_index_size_across_regionservers where entityName=hbase"
+        }
+      ],
+      "title": "Total Store File Index Size",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "foursquare-clouderamanager-datasource",
+        "uid": "PCBD112296461D5A7"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "continuous-BlYlRd"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 20,
+            "gradientMode": "scheme",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "smooth",
+            "lineStyle": {
+              "fill": "solid"
+            },
+            "lineWidth": 3,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": true,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 25
+      },
+      "id": 24,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "foursquare-clouderamanager-datasource",
+            "uid": "PCBD112296461D5A7"
+          },
+          "refId": "A",
+          "target": "select total_mutations_without_wal_rate_across_regionservers where entityName=hbase"
+        }
+      ],
+      "title": "Total Mutations without WAL",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "foursquare-clouderamanager-datasource",
+        "uid": "PCBD112296461D5A7"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "continuous-GrYlRd"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "percent"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 25
+      },
+      "id": 25,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "9.5.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "foursquare-clouderamanager-datasource",
+            "uid": "PCBD112296461D5A7"
+          },
+          "refId": "A",
+          "target": "select total_pause_time_with_gc_99_9th_percentile_across_regionservers where entityName=hbase"
+        }
+      ],
+      "title": "Total GC Pause Time 99.9P",
+      "type": "timeseries"
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 33
+      },
       "id": 11,
       "panels": [],
       "title": "RegionServer: BlockCache",
@@ -718,7 +1416,8 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource"
+        "type": "foursquare-clouderamanager-datasource",
+        "uid": "PCBD112296461D5A7"
       },
       "fieldConfig": {
         "defaults": {
@@ -746,7 +1445,7 @@
         "h": 4,
         "w": 5,
         "x": 0,
-        "y": 13
+        "y": 34
       },
       "id": 12,
       "options": {
@@ -767,7 +1466,8 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource"
+            "type": "foursquare-clouderamanager-datasource",
+            "uid": "PCBD112296461D5A7"
           },
           "refId": "A",
           "target": "select block_cache_hit_rate_across_regionservers where entityName=hbase"
@@ -778,7 +1478,8 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource"
+        "type": "foursquare-clouderamanager-datasource",
+        "uid": "PCBD112296461D5A7"
       },
       "fieldConfig": {
         "defaults": {
@@ -804,7 +1505,7 @@
         "h": 4,
         "w": 5,
         "x": 5,
-        "y": 13
+        "y": 34
       },
       "id": 14,
       "options": {
@@ -825,7 +1526,8 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource"
+            "type": "foursquare-clouderamanager-datasource",
+            "uid": "PCBD112296461D5A7"
           },
           "refId": "A",
           "target": "select block_cache_miss_rate_across_regionservers where entityName=hbase"
@@ -836,7 +1538,8 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource"
+        "type": "foursquare-clouderamanager-datasource",
+        "uid": "PCBD112296461D5A7"
       },
       "fieldConfig": {
         "defaults": {
@@ -858,7 +1561,7 @@
         "h": 4,
         "w": 5,
         "x": 10,
-        "y": 13
+        "y": 34
       },
       "id": 16,
       "options": {
@@ -879,7 +1582,8 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource"
+            "type": "foursquare-clouderamanager-datasource",
+            "uid": "PCBD112296461D5A7"
           },
           "refId": "A",
           "target": "select total_block_cache_free_size_across_regionservers where entityName=hbase"
@@ -890,7 +1594,8 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource"
+        "type": "foursquare-clouderamanager-datasource",
+        "uid": "PCBD112296461D5A7"
       },
       "fieldConfig": {
         "defaults": {
@@ -912,7 +1617,7 @@
         "h": 4,
         "w": 5,
         "x": 15,
-        "y": 13
+        "y": 34
       },
       "id": 17,
       "options": {
@@ -933,7 +1638,8 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource"
+            "type": "foursquare-clouderamanager-datasource",
+            "uid": "PCBD112296461D5A7"
           },
           "refId": "A",
           "target": "select total_block_cache_size_across_regionservers where entityName=hbase"
@@ -944,7 +1650,8 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource"
+        "type": "foursquare-clouderamanager-datasource",
+        "uid": "PCBD112296461D5A7"
       },
       "fieldConfig": {
         "defaults": {
@@ -970,7 +1677,7 @@
         "h": 4,
         "w": 4,
         "x": 20,
-        "y": 13
+        "y": 34
       },
       "id": 15,
       "options": {
@@ -991,7 +1698,8 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource"
+            "type": "foursquare-clouderamanager-datasource",
+            "uid": "PCBD112296461D5A7"
           },
           "refId": "A",
           "target": "select block_cache_evicted_rate_across_regionservers where entityName=hbase"
@@ -1002,7 +1710,8 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource"
+        "type": "foursquare-clouderamanager-datasource",
+        "uid": "PCBD112296461D5A7"
       },
       "fieldConfig": {
         "defaults": {
@@ -1063,7 +1772,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 17
+        "y": 38
       },
       "id": 13,
       "options": {
@@ -1081,7 +1790,8 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource"
+            "type": "foursquare-clouderamanager-datasource",
+            "uid": "PCBD112296461D5A7"
           },
           "refId": "A",
           "target": "select block_cache_hit_ratio_across_regionservers where entityName=hbase"
@@ -1092,7 +1802,8 @@
     },
     {
       "datasource": {
-        "type": "foursquare-clouderamanager-datasource"
+        "type": "foursquare-clouderamanager-datasource",
+        "uid": "PCBD112296461D5A7"
       },
       "fieldConfig": {
         "defaults": {
@@ -1147,7 +1858,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 17
+        "y": 38
       },
       "id": 18,
       "options": {
@@ -1165,7 +1876,8 @@
       "targets": [
         {
           "datasource": {
-            "type": "foursquare-clouderamanager-datasource"
+            "type": "foursquare-clouderamanager-datasource",
+            "uid": "PCBD112296461D5A7"
           },
           "refId": "A",
           "target": "select total_block_cache_size_across_regionservers where entityName=hbase"
@@ -1183,12 +1895,13 @@
     "list": []
   },
   "time": {
-    "from": "now-1h",
+    "from": "now-2d",
     "to": "now"
   },
   "timepicker": {},
   "timezone": "",
   "title": "Hbase",
-  "version": 5,
+  "uid": "cb1dd603-c225-4bde-b5e9-c2692fa0112b",
+  "version": 7,
   "weekStart": ""
 }
