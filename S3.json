@@ -133,43 +133,8 @@
           "queryMode": "Metrics",
           "refId": "A",
           "region": "$region",
-          "sql": {
-            "from": {
-              "property": {
-                "name": "AWS/S3",
-                "type": "string"
-              },
-              "type": "property"
-            },
-            "select": {
-              "name": "COUNT",
-              "parameters": [
-                {
-                  "name": "NumberOfObjects",
-                  "type": "functionParameter"
-                }
-              ],
-              "type": "function"
-            },
-            "where": {
-              "expressions": [
-                {
-                  "operator": {
-                    "name": "=",
-                    "value": "odx-weekly-test"
-                  },
-                  "property": {
-                    "name": "BucketName",
-                    "type": "string"
-                  },
-                  "type": "operator"
-                }
-              ],
-              "type": "and"
-            }
-          },
-          "sqlExpression": "SELECT COUNT(NumberOfObjects) FROM \"AWS/S3\" WHERE BucketName = 'odx-weekly-test'",
-          "statistic": "Maximum"
+          "sqlExpression": "",
+          "statistic": "SampleCount"
         }
       ],
       "title": "No Of Objects",
@@ -274,10 +239,10 @@
           "refId": "A",
           "region": "$region",
           "sqlExpression": "",
-          "statistic": "Maximum"
+          "statistic": "SampleCount"
         }
       ],
-      "title": "BucketSize",
+      "title": "Bucket Size",
       "type": "timeseries"
     },
     {
@@ -434,42 +399,7 @@
           "queryMode": "Metrics",
           "refId": "A",
           "region": "$region",
-          "sql": {
-            "from": {
-              "property": {
-                "name": "AWS/S3",
-                "type": "string"
-              },
-              "type": "property"
-            },
-            "select": {
-              "name": "COUNT",
-              "parameters": [
-                {
-                  "name": "PutRequests",
-                  "type": "functionParameter"
-                }
-              ],
-              "type": "function"
-            },
-            "where": {
-              "expressions": [
-                {
-                  "operator": {
-                    "name": "=",
-                    "value": "odx-weekly-test"
-                  },
-                  "property": {
-                    "name": "BucketName",
-                    "type": "string"
-                  },
-                  "type": "operator"
-                }
-              ],
-              "type": "and"
-            }
-          },
-          "sqlExpression": "SELECT COUNT(PutRequests) FROM \"AWS/S3\" WHERE BucketName = 'odx-weekly-test'",
+          "sqlExpression": "",
           "statistic": "SampleCount"
         }
       ],
@@ -1303,13 +1233,13 @@
     ]
   },
   "time": {
-    "from": "now-30m",
+    "from": "now-7d",
     "to": "now"
   },
   "timepicker": {},
   "timezone": "",
   "title": "Amazon S3",
   "uid": "d3266596-8caa-417c-bb4b-ada11611e524",
-  "version": 3,
+  "version": 4,
   "weekStart": ""
 }
