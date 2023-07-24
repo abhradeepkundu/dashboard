@@ -17,6 +17,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
+  "id": 5,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -1212,8 +1213,8 @@
       {
         "current": {
           "selected": false,
-          "text": "odx-weekly-test",
-          "value": "odx-weekly-test"
+          "text": "",
+          "value": ""
         },
         "description": "Specify the Bucket name here",
         "hide": 0,
@@ -1222,11 +1223,11 @@
         "options": [
           {
             "selected": true,
-            "text": "odx-weekly-test",
-            "value": "odx-weekly-test"
+            "text": "",
+            "value": ""
           }
         ],
-        "query": "odx-weekly-test",
+        "query": "",
         "skipUrlSync": false,
         "type": "textbox"
       }
