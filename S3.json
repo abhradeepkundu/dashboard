@@ -17,7 +17,6 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 6,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -134,7 +133,7 @@
           "refId": "A",
           "region": "$region",
           "sqlExpression": "",
-          "statistic": "SampleCount"
+          "statistic": "Maximum"
         }
       ],
       "title": "No Of Objects",
@@ -193,7 +192,8 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "decbytes"
         },
         "overrides": []
       },
@@ -239,7 +239,7 @@
           "refId": "A",
           "region": "$region",
           "sqlExpression": "",
-          "statistic": "SampleCount"
+          "statistic": "Maximum"
         }
       ],
       "title": "Bucket Size",
@@ -1212,8 +1212,8 @@
       {
         "current": {
           "selected": false,
-          "text": "",
-          "value": ""
+          "text": "odx-weekly-test",
+          "value": "odx-weekly-test"
         },
         "description": "Specify the Bucket name here",
         "hide": 0,
@@ -1222,11 +1222,11 @@
         "options": [
           {
             "selected": true,
-            "text": "",
-            "value": ""
+            "text": "odx-weekly-test",
+            "value": "odx-weekly-test"
           }
         ],
-        "query": "",
+        "query": "odx-weekly-test",
         "skipUrlSync": false,
         "type": "textbox"
       }
@@ -1240,6 +1240,6 @@
   "timezone": "",
   "title": "Amazon S3",
   "uid": "d3266596-8caa-417c-bb4b-ada11611e524",
-  "version": 4,
+  "version": 1,
   "weekStart": ""
 }
